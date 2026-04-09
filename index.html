@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>동화 모듈 시스템</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-box" class="container">
+        <div id="main-menu">
+            <h1>📖 동화 나라</h1>
+            <div class="menu-buttons">
+                <button onclick="startStory('rabbit')">🐰 토끼와 거북이</button>
+                <button onclick="startStory('sun')">🌞 해와 달</button>
+            </div>
+        </div>
+
+        <div id="story-page" class="hidden">
+            <button class="btn-back" onclick="location.reload()">⬅ 뒤로가기</button>
+            <h2 id="story-title"></h2>
+            
+            <div id="interaction-area"></div>
+            <p id="story-text"></p>
+            <div id="choice-area"></div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
